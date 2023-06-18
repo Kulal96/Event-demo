@@ -53,5 +53,7 @@ jobs:
           name: my-artifact
       - name: Display Artifact
         run: ls -R
+      - name: Outpu FileName
+        run: echo ${{needs.Build.outputs.output1}}
       - name: Deploy project
         run: echo "Deploying..."
